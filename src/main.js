@@ -12,7 +12,7 @@ import abbreviations from "./abbr.json" assert { type: "json" };
  * formatNumber(1234.5678); // '1,234.5678'
  *
  */
-function formatNumber(num) {
+export function formatNumber(num) {
   if (isNaN(num)) return NaN;
   if (Math.abs(num) < 1000) return num;
   let strNum = String(num);
@@ -39,7 +39,7 @@ function formatNumber(num) {
  * Maximum number of zh-CN, zh-TW, ja and ko is 1e25-1.
  * Maximum number of en and ru is 1e16-1.
  * Maximum number of vi is 1e13-1.
- * 
+ *
  * @param {Number} num The number to be abbreviated.
  * @param {Number} digits The number of digits after the decimal point. Default is 1.
  * @param {String} rounding The rounding method. Default is "round". Can be "round", "ceil" or "floor".
@@ -54,7 +54,7 @@ function formatNumber(num) {
  *
  */
 
-function abbreviateNumber(
+export function abbreviateNumber(
   num,
   digits = 1,
   rounding = "round",
@@ -103,6 +103,3 @@ function abbreviateNumber(
 
   return `${abbreviated}${suffix}`;
 }
-
-export default formatNumber;
-export { abbreviateNumber, formatNumber };
