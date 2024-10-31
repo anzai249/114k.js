@@ -1,6 +1,6 @@
 {
   "name": "114k.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "114k.js is a lightweight number abbreviation library.",
   "main": "index.js",
   "type": "module",
