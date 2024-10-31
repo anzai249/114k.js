@@ -1,0 +1,43 @@
+{
+  "name": "114k.js",
+  "version": "0.1.0",
+  "description": "114k.js is a lightweight number abbreviation library.",
+  "main": "index.js",
+  "type": "module",
+  "module": "dist/format114k.esm-bundler.js",
+  "unpkg": "dist/format114k.global.js",
+  "jsdelivr": "dist/format114k.global.js",
+  "exports": {
+    ".": {
+      "default": {
+        "require": "./index.cjs",
+        "node": "./index.cjs",
+        "default": "./dist/format114k.esm-bundler.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "index.cjs",
+    "index.js",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "numbers",
+    "formatting",
+    "abbreviation",
+    "format"
+  ],
+  "author": "anzai249",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "rollup": "^4.24.3",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

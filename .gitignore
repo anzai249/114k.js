@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+*.secret
+dist/
+node_modules/
+playground/
+pnpm-lock.yaml
