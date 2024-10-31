@@ -1,9 +1,3 @@
-const {
-  formatNumber,
-  abbreviateNumber,
-} = require("./dist/format114k.esm.js");
+import { formatNumber, abbreviateNumber } from "./dist/format114k.cjs.js";
 
-module.exports = {
-  formatNumber,
-  abbreviateNumber,
-}
+export { abbreviateNumber, formatNumber };
